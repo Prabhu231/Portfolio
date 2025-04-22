@@ -7,7 +7,9 @@ Welcome to my personal portfolio — a uniquely designed showcase of my journey,
 
 ## 🛠️ Tech Stack
 
-Next.js, TailwindCSS
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Deployment**: https://prabhupatil.com
 
 ---
 
