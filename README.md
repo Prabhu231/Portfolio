@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio — a uniquely designed showcase of my journey, projects, and love for technology. This site is built with ⚛️ Next.js and styled with futuristic design elements. It's a tribute to my passion for building beautiful, performant, and meaningful digital experiences.
 
+https://prabhupatil.com
+
 
 ---
 
@@ -9,7 +11,6 @@ Welcome to my personal portfolio — a uniquely designed showcase of my journey,
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Deployment**: https://prabhupatil.com
 
 ---
 
