@@ -1,5 +1,4 @@
 import "@/styles/globals.css";
-import Head from "next/head";
 
 export const metadata = {
   title: "Prabhu Patil | Developer Portfolio",
@@ -31,13 +30,18 @@ export const metadata = {
 
 const RootLayout = ({ children }) => {
 
+
+
   return (
     <html lang="en">
-      <Head>
+      <head>
         <link rel="icon" href="/favicon.ico" />
         <title>Prabhu Patil | Developer Portfolio</title>
-      </Head>
-      <body>{children}</body>
+      </head>
+
+      <body>
+
+        {children}</body>
     </html>
   );
 };

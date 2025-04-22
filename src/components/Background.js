@@ -6,7 +6,26 @@ const Background = () => {
 
   useEffect(() => {
     setMounted(true)
+    const script = document.createElement("script");
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-LT9B96QD1J";
+    script.async = true;
+    document.head.appendChild(script);
+
+    script.onload = () => {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-LT9B96QD1J");
+    };
+
+    return () => {
+      document.head.removeChild(script);
+    };
   }, [])
+
+
   if (!mounted) {
     return null
   }
