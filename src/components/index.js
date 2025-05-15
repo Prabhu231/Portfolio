@@ -19,7 +19,7 @@ const Portfolio = () => {
         mobile: "+91 9611689994",
         github: "https://github.com/Prabhu231",
         linkedin: "https://www.linkedin.com/in/prabhupatil1/",
-        resume: "https://drive.google.com/drive/folders/1cJA38MEHR3JZ35mFucr1XVq3nkXJA7DL?usp=sharing"
+        resume: "https://drive.google.com/file/d/1ns1kJhoxRTjXIRxAy9zunXiVIGLzoQC1/view"
     }
 
     useEffect(() => {
@@ -153,7 +153,7 @@ const Portfolio = () => {
                         <h3 className="text-lg font-semibold text-white mb-2">
                             KPMG Assurance and Consulting Services
                         </h3>
-                        <p className="text-cyan-300 text-sm mb-2">Intern - Nov 2024 to May 2025 (Ongoing)</p>
+                        <p className="text-cyan-300 text-sm mb-2">Intern - Nov 2024 to May 2025 </p>
                         My internship at KPMG was a fulfilling and educational experience. I was involved in the development of full-stack applications with React.js, Django, and Node.js, contributing to enterprise-level solutions. I also worked with various databases, including MySQL, PostgreSQL, MongoDB, and Redis (an in-memory database), which expanded my knowledge significantly. Additionally, I optimized backend code to decrease latency and manage complex tables with large entries.
                     </div>
                 </div>
@@ -174,7 +174,13 @@ const Portfolio = () => {
                             deployedUrl="https://hintcode.in"
 
                         />
-
+                        <Card 
+                        title="Autoscheduler"
+                        description="Autoscheduler is a powerful tool designed to help you schedule and send bulk emails with file attachments to up to 50 BCC recipients in a single operation. Whether you're managing marketing campaigns, sending reports, or sharing updates, Autoscheduler simplifies the process of automating email deliveries."
+                        tags={["Next.js", "Django","Celery", "Redis"]}
+                        githubUrl="https://github.com/Prabhu231/Autoscheduler-Frontend"
+                        deployedUrl="https://autoscheduler.in"
+                        />
                         <Card
                             title="Blind for Students"
                             description="Blind for Students is a web platform tailored for college students, inspired by the anonymous social network 'Blind' It provides a safe space for students to share thoughts, confessions, and discussions anonymously within their college community."
@@ -184,7 +190,7 @@ const Portfolio = () => {
                         />
                         <Card
                             title="Prompt Sharing Application"
-                            description="The Prompt Sharing App is a collaborative web platform that allows users to create, share, and discover AI prompts tailored for various use cases like image generation, content writing, programming help, and more. It streamlines the process of storing and retrieving effective prompts, making it easier for individuals and teams to enhance productivity and creativity when working with AI tools like ChatGPT, Midjourney, or DALL·E."
+                            description="Prompt Sharing App is a collaborative platform where users can create, share, and explore AI prompts for tasks like image generation, writing, coding, and more—boosting productivity and creativity with tools like ChatGPT, Midjourney, and DALL·E."
                             tags={["Next.js", "MongoDB"]}
                             githubUrl="https://github.com/Prabhu231/Prompt-Sharing-Application"
 
@@ -194,13 +200,6 @@ const Portfolio = () => {
                             description="Dog Breed Classification is a machine learning project that uses image recognition to identify the breed of a dog from a photo. It involves training a convolutional neural network (CNN) on a dataset of labeled dog images. The model learns to recognize patterns in fur, size, shape, and facial features to accurately classify among 120 different breeds."
                             tags={["Google Colab", "Tensorflow", "Scikit-Learn"]}
                             githubUrl="https://github.com/Prabhu231/Dog-Breed-Identification"
-
-                        />
-                        <Card
-                            title="Bulldozers Price Prediction"
-                            description="Bulldozer Price Prediction is a machine learning project aimed at forecasting the sale prices of used bulldozers based on historical auction data. It involves analyzing features like machine type, manufacturing year, usage hours, sale date, and equipment condition to predict future prices."
-                            tags={["Jupyter Notebook", "Scikit-Learn"]}
-                            githubUrl="https://github.com/Prabhu231/Bulldozers-Price-Prediction"
 
                         />
                         <Card
