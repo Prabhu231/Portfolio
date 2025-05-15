@@ -19,7 +19,7 @@ const Portfolio = () => {
         mobile: "+91 9611689994",
         github: "https://github.com/Prabhu231",
         linkedin: "https://www.linkedin.com/in/prabhupatil1/",
-        resume: "https://drive.google.com/file/d/1ns1kJhoxRTjXIRxAy9zunXiVIGLzoQC1/view"
+        resume: "https://drive.google.com/file/d/19P75PzPJFmYO6BBMn9vcSdWb8s_KaxPK/view"
     }
 
     useEffect(() => {
