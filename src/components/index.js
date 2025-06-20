@@ -61,12 +61,12 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen w-full text-cyan-400 font-mono p-6 flex flex-col justify-center overflow-hidden">
+    <div className="relative min-h-screen w-full text-cyan-400 font-mono p-4 sm:p-6 flex flex-col justify-center overflow-hidden">
       <Background />
 
-      <div className="relative z-10">
+      <div className="relative z-10 max-w-7xl mx-auto w-full">
         <div
-          className={`mb-10 transition-all duration-1000 ${
+          className={`mb-6 sm:mb-10 transition-all duration-1000 ${
             visibleSections.contacts
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-10"
@@ -78,21 +78,21 @@ const Portfolio = () => {
             <div className="absolute -top-4 -right-4 w-16 h-16 border-r border-b border-cyan-400 rounded-br-3xl opacity-50"></div>
             <div className="absolute -bottom-4 -left-4 w-16 h-16 border-l border-t border-cyan-400 rounded-tl-3xl opacity-50"></div>
 
-            <h2 className="text-xl font-bold mb-4 text-white flex items-center">
+            <h2 className="text-lg sm:text-xl font-bold mb-4 text-white flex items-center">
               <span className="text-cyan-300 mr-2">&gt;</span>
               <span className="animate-pulse"></span> Connect with me{" "}
               <span className="animate-pulse"></span>
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
               <a
                 href={`mailto:${contactInfo.email}`}
                 className="flex items-center gap-2 hover:bg-cyan-900/50 p-2 rounded-md transition-all group"
               >
-                <div className="bg-cyan-800/50 p-2 rounded-full group-hover:bg-cyan-700/70 transition-all">
+                <div className="bg-cyan-800/50 p-2 rounded-full group-hover:bg-cyan-700/70 transition-all flex-shrink-0">
                   <Mail size={18} className="text-cyan-300" />
                 </div>
-                <span className="group-hover:text-white transition-all">
+                <span className="group-hover:text-white transition-all text-sm sm:text-base truncate">
                   {contactInfo.email}
                 </span>
               </a>
@@ -101,19 +101,19 @@ const Portfolio = () => {
                 href={`tel:${contactInfo.mobile}`}
                 className="flex items-center gap-2 hover:bg-cyan-900/50 p-2 rounded-md transition-all group"
               >
-                <div className="bg-cyan-800/50 p-2 rounded-full group-hover:bg-cyan-700/70 transition-all">
+                <div className="bg-cyan-800/50 p-2 rounded-full group-hover:bg-cyan-700/70 transition-all flex-shrink-0">
                   <Phone size={18} className="text-cyan-300" />
                 </div>
-                <span className="group-hover:text-white transition-all">
+                <span className="group-hover:text-white transition-all text-sm sm:text-base">
                   {contactInfo.mobile}
                 </span>
               </a>
 
               <div className="flex items-center gap-2 hover:bg-cyan-900/50 p-2 rounded-md transition-all group">
-                <div className="bg-cyan-800/50 p-2 rounded-full group-hover:bg-cyan-700/70 transition-all">
+                <div className="bg-cyan-800/50 p-2 rounded-full group-hover:bg-cyan-700/70 transition-all flex-shrink-0">
                   <MapPin size={18} className="text-cyan-300" />
                 </div>
-                <span className="group-hover:text-white transition-all">
+                <span className="group-hover:text-white transition-all text-sm sm:text-base">
                   {contactInfo.location}
                 </span>
               </div>
@@ -124,10 +124,10 @@ const Portfolio = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:bg-cyan-900/50 p-2 rounded-md transition-all group"
               >
-                <div className="bg-cyan-800/50 p-2 rounded-full group-hover:bg-cyan-700/70 transition-all">
+                <div className="bg-cyan-800/50 p-2 rounded-full group-hover:bg-cyan-700/70 transition-all flex-shrink-0">
                   <Github size={18} className="text-cyan-300" />
                 </div>
-                <span className="group-hover:text-white transition-all">
+                <span className="group-hover:text-white transition-all text-sm sm:text-base">
                   GitHub
                 </span>
               </a>
@@ -138,10 +138,10 @@ const Portfolio = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:bg-cyan-900/50 p-2 rounded-md transition-all group"
               >
-                <div className="bg-cyan-800/50 p-2 rounded-full group-hover:bg-cyan-700/70 transition-all">
+                <div className="bg-cyan-800/50 p-2 rounded-full group-hover:bg-cyan-700/70 transition-all flex-shrink-0">
                   <Linkedin size={18} className="text-cyan-300" />
                 </div>
-                <span className="group-hover:text-white transition-all">
+                <span className="group-hover:text-white transition-all text-sm sm:text-base">
                   LinkedIn
                 </span>
               </a>
@@ -152,27 +152,28 @@ const Portfolio = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:bg-cyan-900/50 p-2 rounded-md transition-all group"
               >
-                <div className="bg-cyan-800/50 p-2 rounded-full group-hover:bg-cyan-700/70 transition-all">
+                <div className="bg-cyan-800/50 p-2 rounded-full group-hover:bg-cyan-700/70 transition-all flex-shrink-0">
                   <FileText size={18} className="text-cyan-300" />
                 </div>
-                <span className="group-hover:text-white transition-all">
+                <span className="group-hover:text-white transition-all text-sm sm:text-base">
                   Resume
                 </span>
               </a>
             </div>
           </div>
         </div>
+
         <div
-          className={`mb-8 transition-all duration-1000 ${
+          className={`mb-6 sm:mb-8 transition-all duration-1000 ${
             visibleSections.bio
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="flex flex-col md:flex-row items-start md:items-center mb-4 gap-6">
-            <div className="relative group">
+          <div className="flex flex-col md:flex-row items-start md:items-center mb-4 gap-4 sm:gap-6">
+            <div className="relative group mx-auto md:mx-0">
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full animate-pulse group-hover:from-blue-500 group-hover:to-cyan-500 transition-all duration-700"></div>
-              <div className="relative rounded-full overflow-hidden border-2 border-cyan-400/70 h-32 w-32 md:h-40 md:w-40">
+              <div className="relative rounded-full overflow-hidden border-2 border-cyan-400/70 h-24 w-24 sm:h-32 sm:w-32 md:h-40 md:w-40">
                 <Image
                   src="/profile_pic.jpeg"
                   alt="Profile Picture"
@@ -187,14 +188,14 @@ const Portfolio = () => {
               <div className="absolute -top-1 -left-1 w-4 h-4 border-l-2 border-t-2 border-cyan-400"></div>
             </div>
 
-            <h1 className="text-3xl font-bold text-cyan-300 flex items-center">
+            <h1 className="text-2xl sm:text-3xl font-bold text-cyan-300 flex items-center text-center md:text-left w-full md:w-auto justify-center md:justify-start">
               <span className="inline-block w-4 h-4 bg-cyan-400 mr-2 animate-pulse"></span>
               <span className="text-white ml-2">Prabhu Patil</span>
             </h1>
           </div>
 
-          <div className="bg-black/50 border border-cyan-500/30 p-4 rounded backdrop-blur-sm box-content md:box-border">
-            <p className="mb-0">
+          <div className="bg-black/50 border border-cyan-500/30 p-4 rounded backdrop-blur-sm">
+            <p className="mb-0 text-sm sm:text-base leading-relaxed">
               Hello, I'm Prabhu. I transform vague concepts into deployable
               systems and chaos into clear code. I work quickly, break patterns
               (not production), and obsess over getting things just right, I'm
@@ -206,13 +207,13 @@ const Portfolio = () => {
         </div>
 
         <div
-          className={`mb-8 transition-all duration-1000 ${
+          className={`mb-6 sm:mb-8 transition-all duration-1000 ${
             visibleSections.exp
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-xl font-bold mb-4 flex items-center">
+          <h2 className="text-lg sm:text-xl font-bold mb-4 flex items-center">
             <span className="text-cyan-300 mr-2">&gt; </span> Education
           </h2>
 
@@ -220,47 +221,50 @@ const Portfolio = () => {
             <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-cyan-400 to-blue-400 opacity-70"></div>
             <div className="absolute -top-2 -right-2 w-8 h-8 border-r border-b border-cyan-400/50 rounded-br-xl"></div>
 
-            <div className="flex items-start gap-4">
-              <div className="bg-cyan-800/50 p-2 rounded-full group-hover:bg-cyan-700/70 transition-all">
+            <div className="flex items-start gap-3 sm:gap-4">
+              <div className="bg-cyan-800/50 p-2 rounded-full group-hover:bg-cyan-700/70 transition-all flex-shrink-0">
                 <GraduationCap size={20} className="text-cyan-300" />
               </div>
-              <div className="flex-1">
-                <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-cyan-100 transition-all">
+              <div className="flex-1 min-w-0">
+                <h3 className="text-base sm:text-lg font-semibold text-white mb-2 group-hover:text-cyan-100 transition-all">
                   B.E Electronics and Communications Engineering
                 </h3>
-                <p className="text-cyan-300 text-sm mb-2 flex items-center gap-2">
-                  <Calendar size={14} />
-                  Dayananda Sagar College of Engineering - Dec 2021 to June 2025
+                <p className="text-cyan-300 text-xs sm:text-sm mb-2 flex items-center gap-2 flex-wrap">
+                  <Calendar size={14} className="flex-shrink-0" />
+                  <span className="break-words">
+                    Dayananda Sagar College of Engineering - Dec 2021 to June
+                    2025
+                  </span>
                 </p>
               </div>
             </div>
           </div>
 
-          <h2 className="text-xl font-bold mb-4 flex items-center">
+          <h2 className="text-lg sm:text-xl font-bold mb-4 flex items-center">
             <span className="text-cyan-300 mr-2">&gt; </span> Experience
           </h2>
 
-          <div className="bg-gradient-to-br border-2 border-cyan-400/50 rounded-lg p-6 backdrop-blur-md relative overflow-hidden group hover:border-cyan-400/80 transition-all duration-500 shadow-2xl">
+          <div className="bg-gradient-to-br border-2 border-cyan-400/50 rounded-lg p-4 sm:p-6 backdrop-blur-md relative overflow-hidden group hover:border-cyan-400/80 transition-all duration-500 shadow-2xl">
             {/* Animated background elements */}
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 animate-pulse"></div>
             <div className="absolute bottom-0 right-0 w-full h-1 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 animate-pulse"></div>
-            <div className="absolute -top-4 -right-4 w-16 h-16 border-r-2 border-b-2 border-cyan-400/30 rounded-br-3xl group-hover:border-cyan-400/60 transition-all"></div>
-            <div className="absolute -bottom-4 -left-4 w-16 h-16 border-l-2 border-t-2 border-cyan-400/30 rounded-tl-3xl group-hover:border-cyan-400/60 transition-all"></div>
+            <div className="absolute -top-4 -right-4 w-12 h-12 sm:w-16 sm:h-16 border-r-2 border-b-2 border-cyan-400/30 rounded-br-3xl group-hover:border-cyan-400/60 transition-all"></div>
+            <div className="absolute -bottom-4 -left-4 w-12 h-12 sm:w-16 sm:h-16 border-l-2 border-t-2 border-cyan-400/30 rounded-tl-3xl group-hover:border-cyan-400/60 transition-all"></div>
 
             {/* Company header */}
-            <div className="flex items-start gap-4 mb-6">
-              <div className="bg-cyan-800/50 p-3 rounded-full group-hover:bg-cyan-700/70 group-hover:scale-110 transition-all duration-300">
+            <div className="flex items-start gap-3 sm:gap-4 mb-4 sm:mb-6">
+              <div className="bg-cyan-800/50 p-2 sm:p-3 rounded-full group-hover:bg-cyan-700/70 group-hover:scale-110 transition-all duration-300 flex-shrink-0">
                 <Building2 size={24} className="text-cyan-300" />
               </div>
-              <div className="flex-1">
-                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-100 transition-all">
+              <div className="flex-1 min-w-0">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 group-hover:text-cyan-100 transition-all">
                   SDE Student Intern
                 </h3>
-                <div className="flex items-center gap-4 text-cyan-300 text-sm mb-4">
-                  <span className="bg-cyan-800/30 px-3 py-1 rounded-full border border-cyan-500/30">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-cyan-300 text-xs sm:text-sm mb-4">
+                  <span className="bg-cyan-800/30 px-2 sm:px-3 py-1 rounded-full border border-cyan-500/30 text-center sm:text-left">
                     KPMG Assurance and Consulting Services
                   </span>
-                  <span className="flex items-center gap-2">
+                  <span className="flex items-center gap-2 justify-center sm:justify-start">
                     <Calendar size={14} />
                     Nov 2024 - May 2025
                   </span>
@@ -269,14 +273,14 @@ const Portfolio = () => {
             </div>
 
             {/* Tech stack showcase */}
-            <div className="mb-6">
-              <h4 className="text-lg font-semibold text-cyan-300 mb-3 flex items-center gap-2">
+            <div className="mb-4 sm:mb-6">
+              <h4 className="text-base sm:text-lg font-semibold text-cyan-300 mb-3 flex items-center gap-2">
                 Tech Stack & Tools
               </h4>
-              <div className="flex gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-8 gap-2 sm:gap-3">
                 {[
                   { name: "React.js", icon: <ReactIcon /> },
-                  { name: "Django (Python)", icon: <PythonIcon /> },
+                  { name: "Django", icon: <PythonIcon /> },
                   { name: "Node.js", icon: <NodeIcon /> },
                   {
                     name: "MySQL",
@@ -295,13 +299,13 @@ const Portfolio = () => {
                 ].map((tech, index) => (
                   <div
                     key={tech.name}
-                    className="w-60 bg-black/30 border border-cyan-500/20 rounded-md p-2 flex items-center gap-2 hover:bg-cyan-900/30 hover:border-cyan-400/50 transition-all duration-300 group/tech"
+                    className="bg-black/30 border border-cyan-500/20 rounded-md p-2 flex flex-col sm:flex-row items-center gap-1 sm:gap-2 hover:bg-cyan-900/30 hover:border-cyan-400/50 transition-all duration-300 group/tech text-center sm:text-left"
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
-                    <span className="text-cyan-400 group-hover/tech:text-cyan-300">
+                    <span className="text-cyan-400 group-hover/tech:text-cyan-300 flex-shrink-0">
                       {tech.icon}
                     </span>
-                    <span className="text-xs text-cyan-200 group-hover/tech:text-white transition-all">
+                    <span className="text-xs text-cyan-200 group-hover/tech:text-white transition-all break-words">
                       {tech.name}
                     </span>
                   </div>
@@ -310,8 +314,8 @@ const Portfolio = () => {
             </div>
 
             {/* Key achievements */}
-            <div className="space-y-4">
-              <h4 className="text-lg font-semibold text-cyan-300 mb-3">
+            <div className="space-y-3 sm:space-y-4">
+              <h4 className="text-base sm:text-lg font-semibold text-cyan-300 mb-3">
                 Key Achievements & Responsibilities
               </h4>
 
@@ -339,13 +343,13 @@ const Portfolio = () => {
               ].map((achievement, index) => (
                 <div
                   key={index}
-                  className="bg-black/20 border-l-4 border-cyan-400/50 p-4 rounded-r-md hover:bg-black/30 hover:border-cyan-400/80 transition-all duration-300 group/item"
+                  className="bg-black/20 border-l-4 border-cyan-400/50 p-3 sm:p-4 rounded-r-md hover:bg-black/30 hover:border-cyan-400/80 transition-all duration-300 group/item"
                   style={{ animationDelay: `${index * 150}ms` }}
                 >
-                  <h5 className="font-semibold text-white mb-2 group-hover/item:text-cyan-100 transition-all">
+                  <h5 className="font-semibold text-white mb-2 group-hover/item:text-cyan-100 transition-all text-sm sm:text-base">
                     {achievement.title}
                   </h5>
-                  <p className="text-cyan-200 text-sm leading-relaxed group-hover/item:text-cyan-100 transition-all">
+                  <p className="text-cyan-200 text-xs sm:text-sm leading-relaxed group-hover/item:text-cyan-100 transition-all">
                     {achievement.description}
                   </p>
                 </div>
@@ -358,17 +362,17 @@ const Portfolio = () => {
         </div>
 
         <div
-          className={`mb-8 transition-all duration-1000 ${
+          className={`mb-6 sm:mb-8 transition-all duration-1000 ${
             visibleSections.projects
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-xl font-bold mb-4 flex items-center">
+          <h2 className="text-lg sm:text-xl font-bold mb-4 flex items-center">
             <span className="text-cyan-300 mr-2">&gt; </span> Projects
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-0 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 sm:gap-4 pt-0 items-stretch">
             <Card
               title="Hintcode"
               description="Hintcode is a full-stack web platform designed to help users solve algorithmic problems and test their C++ code against custom or preloaded test cases. It combines real-time code execution, automated evaluation, and AI-powered hints to enhance the coding practice experience."
