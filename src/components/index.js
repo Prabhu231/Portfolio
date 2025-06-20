@@ -280,7 +280,7 @@ const Portfolio = () => {
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-8 gap-2 sm:gap-3">
                 {[
                   { name: "React.js", icon: <ReactIcon /> },
-                  { name: "Django", icon: <PythonIcon /> },
+                  { name: "Django (Python)", icon: <PythonIcon /> },
                   { name: "Node.js", icon: <NodeIcon /> },
                   {
                     name: "MySQL",
