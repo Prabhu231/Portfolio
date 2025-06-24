@@ -2,10 +2,13 @@ import "@/styles/globals.css";
 
 export const metadata = {
   title: "Prabhu Patil | Developer Portfolio",
-  description: "A futuristic developer portfolio showcasing projects, experience, and passion for building technology.",
+  description:
+    "A futuristic developer portfolio showcasing projects, experience, and passion for building technology.",
+  metadataBase: new URL("https://prabhupatil.com"),
   openGraph: {
     title: "Prabhu Patil | Developer Portfolio",
-    description: "A futuristic developer portfolio showcasing projects, experience, and passion for building technology.",
+    description:
+      "A futuristic developer portfolio showcasing projects, experience, and passion for building technology.",
     url: "https://prabhupatil.com",
     siteName: "Prabhu Patil",
     images: [
@@ -22,26 +25,19 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Prabhu Patil | Developer Portfolio",
-    description: "Check out my developer portfolio and projects!",
+    description:
+      "A futuristic developer portfolio showcasing projects, experience, and passion for building technology.",
     images: ["/profile_pic.jpeg"],
   },
 };
 
-
 const RootLayout = ({ children }) => {
-
-
-
   return (
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <title>Prabhu Patil | Developer Portfolio</title>
       </head>
-
-      <body>
-
-        {children}</body>
+      <body>{children}</body>
     </html>
   );
 };
