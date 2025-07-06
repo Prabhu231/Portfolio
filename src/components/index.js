@@ -156,7 +156,7 @@ const Portfolio = () => {
                   <FileText size={18} className="text-cyan-300" />
                 </div>
                 <span className="group-hover:text-white transition-all text-sm sm:text-base">
-                  Resume
+                  Résumé
                 </span>
               </a>
             </div>
